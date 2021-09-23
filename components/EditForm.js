@@ -4,7 +4,7 @@ export default function EditForm(props) {
 	const user = props.data;
 return (
 <>
-<h1>Add New User</h1>
+<h1>Edit User</h1>
 <Link href="/"><a>All Users</a></Link>
 {msg!=='' && <p>{msg}</p> }
 <form onSubmit={props.actionSubmit}>
@@ -17,7 +17,7 @@ return (
 <label htmlFor="age">Age:</label>
 <input type="text" name="age" id="age" value={user.age} onChange={props.actionInputChange} />
 <br/><br/>
-<button>Save</button>
+<button className="button">Save</button>
 </form>
 </>
 )

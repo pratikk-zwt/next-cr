@@ -16,7 +16,7 @@ export default function Home() {
   
   const fetchUsers = () => {
 	  (async function() {
-		 let res = await fetch("http://siteproofs.net/nextjs-crud-api/api/read.php");
+		 let res = await fetch("/api/getUsers");
 		 let users = await res.json();
 		 setIsLoading(0);
 		 setUsers(users.body);
@@ -27,7 +27,7 @@ export default function Home() {
   const handleDeleteAction = (e,id) => {
 	  const deleteUser = {id:id};
 	  (async () => {
-	  const rawResponse = await fetch('http://siteproofs.net/nextjs-crud-api/api/delete.php', {
+	  const rawResponse = await fetch('/api/deleteUser', {
 		method: 'POST',
 		body: JSON.stringify(deleteUser)
 	 });

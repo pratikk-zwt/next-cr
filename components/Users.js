@@ -14,8 +14,8 @@ export default function Users(props) {
             <td>{item.age}</td>
             <td>{item.created}</td>
             <td>
-              <button type="button"><Link href={`user/${item.id}`}><a>Edit</a></Link></button>
-              <button type="button" onClick={(e) => props.deleteAction(e,item.id)}>Delete</button>
+              <Link href={`user/${item.id}`}><a className="btn">Edit</a></Link>
+              <a className="btn" onClick={(e) => props.deleteAction(e,item.id)}>Delete</a>
             </td>
           </tr>
         );
@@ -23,7 +23,7 @@ export default function Users(props) {
   return (
   <>
           <h1>Users</h1>
-		  <Link href="/user/add"><a>Add</a></Link>
+		  <Link href="/user/add"><a className="btn">Add</a></Link>
           <table className="tblList">
             <thead>
               <tr>

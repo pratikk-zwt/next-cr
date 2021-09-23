@@ -20,7 +20,7 @@ const handleSubmit = (event) => {
     console.log("user obj",user);
 	
 	(async () => {
-	  const rawResponse = await fetch('http://siteproofs.net/nextjs-crud-api/api/create.php', {
+	  const rawResponse = await fetch('/api/addUser', {
 		method: 'POST',
 		body: JSON.stringify(user)
 	 });

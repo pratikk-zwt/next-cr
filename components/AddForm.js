@@ -16,7 +16,7 @@ return (
 <label htmlFor="age">Age:</label>
 <input type="text" name="age" id="age" onChange={props.actionInputChange} />
 <br/><br/>
-<button>Save</button>
+<button className="button">Save</button>
 </form>
 </>
 )
