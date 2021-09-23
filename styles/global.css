@@ -1,0 +1,28 @@
+body{
+	font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: teal;
+}
+table.tblList {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: left;
+}
+
+.tblList td,
+.tblList th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.tblList tbody tr:nth-child(odd) {
+  background-color: #dddddd;
+}
